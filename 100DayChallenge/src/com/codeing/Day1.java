@@ -27,6 +27,36 @@ public class Day1 {
         }
     }
 
+    public  static void selectionSort(int[] nums){
+
+        for (int i = 0; i < nums.length; i++) {
+            int minNum = nums[i];
+            int minI = i;
+            for (int j = i+1; j < nums.length; j++) {
+                if(nums[j]<minNum){
+                    minNum = nums[j];
+                    minI = j;
+                }
+
+            }
+            int temp = nums[i];
+            nums[i] = minNum;
+            nums[minI] = temp;
+        }
+    }
+
+    public static void insertionSort(int[] nums){
+        for (int i = 0; i < nums.length; i++) {
+            int current = nums[i];
+            int j = i-1;
+            while (j>=0 && current<nums[j]){
+                nums[j+1] =nums[j];
+                j--;
+            }
+            nums[j+1]=current;
+        }
+    }
+
 
 
     public static void swap(int[] nums,int i,int j){

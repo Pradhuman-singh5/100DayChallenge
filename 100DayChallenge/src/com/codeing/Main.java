@@ -15,6 +15,10 @@ public class Main {
 
         System.out.println(Arrays.toString(nums));
 
+        insertionSort(nums);
+
+        System.out.println(Arrays.toString(nums));
+
 
 
 
