@@ -15,13 +15,9 @@ public class Main {
 
         System.out.println(Arrays.toString(nums));
 
-        insertionSort(nums);
+        quickSort(nums,0,nums.length-1);
 
         System.out.println(Arrays.toString(nums));
-
-
-
-
     }
 
 
