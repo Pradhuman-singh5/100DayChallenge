@@ -21,4 +21,4 @@ public class SparseString {
         return q;
     }
 }
-}
+
