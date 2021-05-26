@@ -1,6 +1,8 @@
 package com.codeing;
 
 
+import java.util.ArrayList;
+
 public class Day1 {
     public  static int binarySearch(int[] nums,int elt){
         int start=0,end= nums.length-1;
@@ -45,15 +47,15 @@ public class Day1 {
         }
     }
 
-    public static void insertionSort(int[] nums){
-        for (int i = 0; i < nums.length; i++) {
-            int current = nums[i];
+    public static void insertionSort(ArrayList<Integer> nums){
+        for (int i = 0; i < nums.size(); i++) {
+            int current = nums.get(i);
             int j = i-1;
-            while (j>=0 && current<nums[j]){
-                nums[j+1] =nums[j];
+            while (j>=0 && current<nums.get(j)){
+                nums.set(j + 1, nums.get(j));
                 j--;
             }
-            nums[j+1]=current;
+            nums.set(j + 1, current);
         }
     }
 
